@@ -1,0 +1,153 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+  background-color: #000;
+  color: #fff;
+  background: radial-gradient(
+    circle,
+    rgb(92, 30, 111) 0%,
+    rgb(42, 73, 108) 100%
+  );
+}
+
+/* Banner Section */
+
+.container {
+  position: relative;
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  filter: blur(100px);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.name {
+  font-family: "Inconsolata", monospace;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.typewriter-container {
+  margin-top: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+}
+
+/* Service Section */
+
+.service-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.service-blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  filter: blur(100px);
+  z-index: 1;
+}
+
+.service-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: #fff;
+  max-width: 1200px;
+}
+
+.service-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.service-title span {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.service-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #c4c4c4;
+  margin-top: 1rem;
+}
+
+.service-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  padding: 20px;
+  border-radius: 15px;
+
+  text-align: center;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.service-icon {
+  font-size: 2rem;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  margin-bottom: 1rem;
+}
+
+.service-name {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.service-desc {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  color: #c4c4c4;
+  margin-top: 1rem;
+}

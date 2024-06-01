@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabbir Hossain</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <!-- Banner Section -->
+      <div class="container">
+        <!-- Blurry background -->
+        <div class="blob"></div>
+
+        <!-- Content -->
+        <div class="content">
+          <div class="avatar">
+            <img src="https://via.placeholder.com/150" alt="Afnan Ferdousi" />
+          </div>
+          <h1 class="name">Sabbir Hossain</h1>
+          <div class="typewriter-container" id="typewriter-container"></div>
+        </div>
+      </div>
+
+      <!-- Service Section -->
+      <div class="service-container">
+        <div class="service-blob"></div>
+        <div class="service-content">
+          <h2 class="service-title">
+            Expertise service!
+            <span>Let’s check it out.</span>
+          </h2>
+          <p class="service-description">
+            As a firm believer in continuous learning, I stay up-to-date with
+            the latest advancements in web technologies. I am enthusiastic about
+            taking on new challenges.
+          </p>
+          <div class="service-list">
+            <div class="service-card">
+              <div class="service-icon">💻</div>
+              <h2 class="service-name">Web Development</h2>
+              <p class="service-desc">
+                Creating responsive and modern web applications.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">📚</div>
+              <h2 class="service-name">Technical Writing</h2>
+              <p class="service-desc">
+                Writing clear and concise technical documentation.
+              </p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">🛠️</div>
+              <h2 class="service-name">Code Review</h2>
+              <p class="service-desc">
+                Providing detailed and constructive code reviews.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.0/dist/core.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var typewriter = new Typewriter("#typewriter-container", {
+          strings: [
+            "Innovator of Tomorrow's Tech",
+            "Crafting Digital Experiences",
+            "Pioneering Code Excellence",
+          ],
+          autoStart: true,
+          loop: true,
+        });
+      });
+    </script>
+  </body>
+</html>
