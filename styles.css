@@ -9,8 +9,8 @@ html {
   color: #fff;
   background: radial-gradient(
     circle,
-    rgb(92, 30, 111) 0%,
-    rgb(42, 73, 108) 100%
+    rgb(5, 17, 31) 100%,
+    rgb(11, 37, 67) 100%
   );
 }
 
@@ -23,6 +23,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 .blob {
@@ -65,89 +66,256 @@ html {
 /* Service Section */
 
 .service-container {
-  position: relative;
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 20px;
-}
-
-.service-blob {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-
-  filter: blur(100px);
-  z-index: 1;
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 20px 4px;
 }
 
 .service-content {
-  position: relative;
-  z-index: 10;
   text-align: center;
-  color: #fff;
-  max-width: 1200px;
+}
+
+.service-blob {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .service-title {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 48px;
+  color: #fff;
+  width: 80%;
 }
 
 .service-title span {
-  display: block;
-  margin-top: 0.5rem;
+  font-weight: normal;
 }
 
 .service-description {
+  padding-top: 30px;
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-size: 20px;
   color: #c4c4c4;
-  margin-top: 1rem;
+  margin-top: 20px;
+  text-align: left;
+  padding-left: 250px;
 }
 
 .service-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-  margin-top: 2rem;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 .service-card {
+  flex: 1;
   padding: 20px;
-  border-radius: 15px;
-
-  text-align: center;
-  width: 300px;
-  margin-bottom: 20px;
+  background-color: rgba(217, 217, 217, 0.1);
+  border-radius: 10px;
+  text-align: left;
+  margin-inline: 10px;
+  padding-block: 70px;
 }
 
 .service-icon {
-  font-size: 2rem;
+  font-size: 4xl;
   padding: 10px;
   border: 2px solid #fff;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.12);
-  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.12);
+
+  width: fit-content;
 }
 
 .service-name {
   font-family: "Raleway", sans-serif;
-  font-size: 1.5rem;
   font-weight: bold;
+  font-size: 2xl;
+  color: #fff;
 }
 
 .service-desc {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.875rem;
+  font-size: 16px;
   color: #c4c4c4;
-  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+/* // */
+
+.resume-container {
+  margin-inline: 100px;
+}
+
+.resume-blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #121212, #000);
+  z-index: -1;
+}
+
+.resume-content {
+  position: relative;
+  background: rgba(217, 217, 217, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.resume-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.resume-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.resume-info {
+  color: #fff;
+}
+
+.resume-summary {
+  margin-bottom: 20px;
+}
+
+.resume-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.resume-role {
+  font-size: 14px;
+  color: #c4c4c4;
+}
+
+.experience-years {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ef4765;
+}
+
+.experience-label {
+  font-size: 14px;
+  color: #c4c4c4;
+}
+
+.resume-description {
+  font-size: 14px;
+  color: #c4c4c4;
+  line-height: 1.6;
+}
+
+.resume-experience-list {
+  color: #fff;
+}
+
+.experience-item {
+  margin-bottom: 20px;
+}
+
+.experience-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.experience-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.experience-logo {
+  width: 30px;
+  height: auto;
+}
+
+.experience-date {
+  font-size: 14px;
+  color: #c4c4c4;
+}
+
+.hr {
+  border-top: 2px solid #666;
+  margin: 20px 0;
+}
+
+/* Skills Section Styles */
+/* Skills Section Styles */
+.skills {
+  margin-top: 30px;
+}
+
+.skills-title {
+  font-size: 20px;
+
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill-item {
+  padding: 10px 20px;
+  background-color: rgba(220, 220, 220, 0.242);
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.tools-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tool-item {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+/* SVG Icons Styling */
+.tool-item svg {
+  width: 60%;
+  height: 60%;
+  fill: #333; /* Adjust icon color */
 }
