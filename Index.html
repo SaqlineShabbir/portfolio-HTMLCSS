@@ -10,7 +10,7 @@
     <div>
       <div class="container">
         <!-- Blurry background -->
-        <div class="blob"></div>
+        <div class="contact-blob" style="filter: blur(100px)"></div>
 
         <!-- Content -->
         <div class="content">
@@ -22,7 +22,7 @@
         </div>
       </div>
 
-      <!-- Services Section -->
+      <!-- Services Section --->
       <div class="service-container">
         <div class="service-content">
           <div class="service-blob">
@@ -265,7 +265,6 @@
 
       <!-- project section -->
       <div class="project-container">
-        <div class="blob"></div>
         <div class="content">
           <h2 class="title">Check Out My Projects</h2>
           <p class="description">
@@ -356,6 +355,71 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- //contact -->
+      <div class="contact-container">
+        <div class="contact-blob" style="filter: blur(100px)"></div>
+        <div class="contact-content">
+          <h2 class="contact-title">Let’s Work Together!</h2>
+          <p class="contact-description">
+            Connect with Me: Reach Out for Collaboration, Questions, or Simply a
+            Friendly Conversation - I'm Here to Hear from You
+          </p>
+
+          <dialog id="contact-modal" class="contact-modal">
+            <div class="contact-modal-box">
+              <form id="contact-form">
+                <div class="contact-form-group">
+                  <label for="name">
+                    <span class="contact-label-number">01</span>
+                    <span>What’s your name?</span>
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Sabbir Hossain"
+                    required
+                  />
+                  <hr />
+                </div>
+
+                <div class="contact-form-group">
+                  <label for="email">
+                    <span class="contact-label-number">02</span>
+                    <span>What’s your email?</span>
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="sabbir@gmail.com\*"
+                    required
+                  />
+                  <hr />
+                </div>
+
+                <div class="contact-form-group">
+                  <label for="message">
+                    <span class="contact-label-number">03</span>
+                    <span>Your message</span>
+                  </label>
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Hey sabbir, can you help me with....*"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="contact-submit-button">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </dialog>
         </div>
       </div>
     </div>
